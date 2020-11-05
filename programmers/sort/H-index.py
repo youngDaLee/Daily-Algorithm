@@ -8,7 +8,7 @@ def solution(citations):
     return answer
 
 
-citations = [20,19,18,1]
+citations = [3,0,6,1,5]
 
 answer = solution(citations)
 
