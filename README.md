@@ -1,2 +1,3 @@
 # Daily-Algorithm
 daily algorithm
+.
