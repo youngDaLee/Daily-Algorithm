@@ -29,6 +29,6 @@ def solution(n, lost, reserve):
 
 
 n = 5
-lost = [2, 4]
-reserve = [3]
+lost = [1,2,4]
+reserve = [1,2,5]
 print(solution(n, lost, reserve))
