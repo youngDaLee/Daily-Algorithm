@@ -9,7 +9,10 @@ def solution(board, moves):
             if(board[j][i-1] != 0):  # 검사하려는 열의(i) 맨 윗칸(n)부터 검사, 만약 비어있지 않다면
                 if(top == board[j][i-1]):  # 만약 걸리는거랑 stack top에 있는 애가 같으면
                     stack.pop()  # pop하고
-                    top = stack[-1]  # top바뀜
+                    if not stack:
+                        top = 0
+                    else:
+                        top = stack[-1]  # top바뀜
                     answer += 2  # pop한 인형 개수 추가됨
                     board[j][i-1] = 0  # 인형뽑기 인형 뽑힘
                     break
