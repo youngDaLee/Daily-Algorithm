@@ -1,16 +1,31 @@
 # 프로그래머스
-
-
+- [k번째 수](https://programmers.co.kr/learn/courses/30/lessons/42748)
 ### 문제 이해하기
-
+- array의 i번째 부터 j번째 수 까지 자르고 정렬한 뒤
+- k번째에 있는 수를 구함
 
 ### 문제 접근 방법
-
-
-### 구현 배경 지식
-
+- i부터 j까지 잘라 새로운 arr에 넣고 정렬
+- 그 arr의 k번째 수를 정답 배열에 넣음
 
 ### 접근 방법을 적용한 코드
+```
+def solution(array, commands):
+    answer = []
+
+    for c in commands:  # comands 개수만큼 반복
+        arr = []
+        arr = list(array[c[0]-1:c[1]])
+        arr.sort()
+
+        answer.append(arr[c[2]-1])
+
+    return answer
+```
+
+
+
+옛날에 푼거
 ```
 def solution(array, commands):
     answer = [0] * len(commands)
