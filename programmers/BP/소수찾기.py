@@ -15,7 +15,6 @@ def solution(numbers):
     # 중복제거
     num_list = list(set(num_list))
 
-    print(num_list)
     for n in num_list:
         if n < 2:
             continue
@@ -26,7 +25,5 @@ def solution(numbers):
         answer += 1
 
     return answer
-
-
 numbers = "011"
 print(solution(numbers))
